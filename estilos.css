@@ -27,7 +27,7 @@ header {
 }
 
 .logo {
-    height: 300px;
+    height: 400px;
     width: auto;
 }
 
@@ -235,3 +235,18 @@ footer {
     box-shadow: 0 10px 25px rgba(0,188,212,0.4);
 }
 
+/* ================= IMAGENES EN SECCIONES ================= */
+
+.seccion img {
+    width: 60%;          /* Ajusta el tamaño aquí */
+    max-width: 450px;    /* Tamaño máximo en pantallas grandes */
+    height: auto;        /* Mantiene proporción */
+    margin: 25px 0;
+    border-radius: 15px;
+    transition: 0.3s ease; /* Mantiene efecto suave */
+}
+
+/* Mantener efecto hover */
+.seccion img:hover {
+    transform: scale(1.05);
+}
