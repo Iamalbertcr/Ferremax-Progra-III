@@ -9,97 +9,94 @@
 <body>
 
 <header>
-    <div class="logo">
-        <h1>FERREMAX</h1>
-        <p>Soluciones en construcción y herramientas</p>
+    <div class="header-contenedor">
+        <img src="ferremax.png" alt="Logo Ferremax" class="logo">
     </div>
 </header>
 
 <nav>
     <ul class="menu">
         <li><a href="#inicio">Inicio</a></li>
-        <li><a href="#productos">Productos</a></li>
+
+        <li class="submenu">
+            <a href="#productos">Productos</a>
+            <ul class="dropdown">
+                <li><a href="#herramientas">Herramientas</a></li>
+                <li><a href="#materiales">Materiales</a></li>
+                <li><a href="#pinturas">Pinturas</a></li>
+            </ul>
+        </li>
+
         <li><a href="#servicios">Servicios</a></li>
         <li><a href="#nosotros">Nosotros</a></li>
         <li><a href="#contacto">Contacto</a></li>
     </ul>
 </nav>
 
-<!-- INICIO -->
 <section id="inicio" class="seccion">
     <h2>Bienvenido a Ferremax</h2>
-    <img src="https://images.unsplash.com/photo-1581092919535-6b2f9e45a1f0" alt="Ferretería">
     <p>
-        Ferremax es una empresa dedicada a la venta de herramientas, materiales de construcción 
-        y soluciones para el hogar. Ofrecemos productos de calidad y asesoría profesional.
+        Somos líderes en herramientas y materiales de construcción.
+        Ofrecemos calidad, garantía y asesoría profesional.
     </p>
 </section>
 
-<!-- PRODUCTOS -->
 <section id="productos" class="seccion">
     <h2>Nuestros Productos</h2>
 
-    <div class="subseccion">
+    <div id="herramientas" class="subseccion">
         <h3>Herramientas Eléctricas</h3>
-        <img src="https://images.unsplash.com/photo-1581093588401-22cfa4d6b3a4" alt="Taladro">
-        <p>Taladros, sierras eléctricas, pulidoras y equipos industriales.</p>
+        <p>Taladros, sierras, pulidoras y más.</p>
     </div>
 
-    <div class="subseccion">
+    <div id="materiales" class="subseccion">
         <h3>Materiales de Construcción</h3>
-        <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e" alt="Construcción">
-        <p>Cemento, varilla, bloques, arena y todo lo necesario para construir.</p>
+        <p>Cemento, bloques, varilla, arena.</p>
     </div>
 
-    <div class="subseccion">
+    <div id="pinturas" class="subseccion">
         <h3>Pinturas y Acabados</h3>
-        <img src="https://images.unsplash.com/photo-1582582494700-f3a59b3f4b9e" alt="Pintura">
-        <p>Pinturas de alta calidad para interiores y exteriores.</p>
+        <p>Pinturas profesionales para interiores y exteriores.</p>
     </div>
 </section>
 
-<!-- SERVICIOS -->
 <section id="servicios" class="seccion">
     <h2>Servicios</h2>
-    <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952" alt="Servicio">
-    <p>
-        Ofrecemos asesoría técnica, entrega a domicilio y cotizaciones personalizadas.
-        Nuestro equipo está preparado para ayudarte en cualquier proyecto.
-    </p>
+    <p>Asesoría técnica, entrega a domicilio y cotizaciones personalizadas.</p>
 </section>
 
-<!-- NOSOTROS -->
 <section id="nosotros" class="seccion">
     <h2>Sobre Nosotros</h2>
-    <img src="https://images.unsplash.com/photo-1521791136064-7986c2920216" alt="Equipo">
-    <p>
-        Ferremax nació con el objetivo de brindar soluciones accesibles y profesionales 
-        en el área de construcción. Contamos con más de 10 años de experiencia en el mercado.
-    </p>
+    <p>Más de 10 años ofreciendo calidad y confianza en el mercado.</p>
 </section>
 
-<!-- CONTACTO (Formulario requerido) -->
 <section id="contacto" class="seccion">
     <h2>Contáctanos</h2>
 
     <form>
         <label>Nombre:</label>
-        <input type="text" placeholder="Ingrese su nombre">
+        <input type="text" required>
 
-        <label>Correo Electrónico:</label>
-        <input type="email" placeholder="Ingrese su correo">
+        <label>Correo:</label>
+        <input type="email" required>
+
+        <label>Teléfono:</label>
+        <input type="tel">
 
         <label>Mensaje:</label>
-        <textarea placeholder="Escriba su mensaje"></textarea>
+        <textarea required></textarea>
 
         <input type="submit" value="Enviar">
     </form>
 </section>
 
 <footer>
-    <p>Desarrollado por: Alberto Hidalgo</p>
-    <p>Curso: Diseño Web - Proyecto Fase 1</p>
-    <p>© 2026 Ferremax</p>
+    <div class="footer-contenido">
+        <p>📍 Dirección: San José, Costa Rica</p>
+        <p>📞 Teléfono: 2222-2222</p>
+        <p>✉ Email: contacto@ferremax.com</p>
+        <p>© 2026 Ferremax</p>
+    </div>
 </footer>
 
 </body>
